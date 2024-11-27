@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import './style.css'
-import Logo from './logo.png'
+import Logo from './SBLogo.png'
 import QRCode from "react-qr-code";
 import { AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
 // import { useIdJs } from "../../../hooks/useIdJs";
@@ -30,7 +30,8 @@ const JavaScriptCertificat = React.forwardRef((props, ref) => {
     name,
     surname,
     pdf_class,
-    id
+    id,
+    teacherName
   } = props.obj;
   return (
     <div className="pdf_driver">
@@ -78,15 +79,23 @@ const JavaScriptCertificat = React.forwardRef((props, ref) => {
 
           <div className="certificat_BoxJs">
             <h1 className="Title_Js">Certificate</h1>
-            <h3 className="NoIdjs">№: {loading ? <span>Data is coming ...</span> : (id ? id : jsId)}</h3>
-            <h3 className="Nogiven">Ushbu sertifikat</h3>
-            <h1 className="NameJs">{surname}<br />{name}</h1>
-            <p className="textjs">"Web dasturlash: JavaScript kursini <br /> muvaffaqiyatli tamomlagani uchun <br /> berildi.</p>
+            <h3 className="NoIdjs">
+              №: {loading ? <span>Loading data...</span> : (id ? id : jsId)}
+            </h3>
+            <h3 className="Nogiven">This Certificate</h3>
+            <h1 className="NameJs">
+              {surname} <br /> {name}
+            </h1>
+            <p className="textjs">
+              Is awarded for successfully completing the <br />
+              "Web Development: JavaScript" course.
+            </p>
+
             <div className="JsFooter">
 
               <div className="signatureBoxJs">
-                <h4>Director</h4>
-                <p>Sh Usmanov</p>
+                <h4>Software Engineer</h4>
+                <p>{teacherName}</p>
               </div>
 
               <div className="QRCodejs">

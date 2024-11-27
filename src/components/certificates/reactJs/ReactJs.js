@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import './style.css'
-import Logo from './logo.png'
+import Logo from './SBLogo.png'
 import Logoreact from './logo512.png'
 import Logoreact1 from './logo512.png'
 import Logoreact2 from './logo512.png'
@@ -68,7 +68,7 @@ const ReactJsCertificat = React.forwardRef((props, ref) => {
             <div className="Reactbox-4"></div>
             <div className="Reactbox-5"></div>
             <div className="Reactbox-4_text">
-              React: "ALGORITHM TALIM" is a private
+              Note: "SmartBrain IT Academy" is a private
               education institution. This certificate is
               valid and certifies that the following
               student has fully completed the 9-month
@@ -87,10 +87,7 @@ const ReactJsCertificat = React.forwardRef((props, ref) => {
             </p>
             <div className="reFooter">
               <div className="signatRe">
-                <div className="signatureReact-1">
-                  <h4>Director</h4>
-                  <p>Sh Usmanov</p>
-                </div>
+
 
                 <div className="signatureReact-2">
                   <h4>Software Engineer</h4>
@@ -103,9 +100,9 @@ const ReactJsCertificat = React.forwardRef((props, ref) => {
                   value={`${URL}/check/${id ? id : reactId}`}
                 />
               </div>
-              <div className="stamp">
+              {/* <div className="stamp">
                 Stamp
-              </div>
+              </div> */}
             </div>
 
 

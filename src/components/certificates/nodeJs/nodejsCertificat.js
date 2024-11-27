@@ -70,7 +70,7 @@ const NodejsCertificat = React.forwardRef((props, ref) => {
             <div className="Nodebox-4_2"></div>
             <div className="Nodebox-4_text">
               <br />
-              "SmartBrain IT Academy" is a private education center.
+              Note: "SmartBrain IT Academy" is a private education center.
               This certificate confirms that the following student has successfully completed the 12-month Web Programming training course.
             </div>
           </>

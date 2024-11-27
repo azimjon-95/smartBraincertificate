@@ -10,13 +10,13 @@
     border-radius: 8px;
 } */
 .pdf_driver {
-    width: 100%;
     height: calc(100vh - 180px);
     min-height: calc(100vh - 180px);
     overflow: auto;
     position: relative;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
+    font-family: sans-serif;
 
 }
 
@@ -205,13 +205,13 @@
 }
 
 .reFooter {
-    width: 70%;
+    width: 60%;
     margin-top: 30px;
     height: 170px;
     display: flex;
     margin-left: 50px;
     align-items: center;
-    /* background-color: #ecd803; */
+    font-family: sans-serif;
     justify-content: space-between;
 }
 
