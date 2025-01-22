@@ -47,6 +47,7 @@
 .pdf_banner_img {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 10px;
 }
 
@@ -72,12 +73,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+    font-family: sans-serif;
 }
 
 
 .by {
     text-align: center;
     font-size: 14px;
+    font-family: sans-serif;
 }
 
 .main_pageLink {
@@ -116,7 +119,7 @@
     }
 
     .pdf_banner_img>h1 {
-        font-size: 27px;
+        font-size: 30px;
         font-weight: 800;
         text-align: center;
         color: #35af3a;
