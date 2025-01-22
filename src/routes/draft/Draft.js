@@ -43,7 +43,7 @@ function Draft() {
 
   return (
     <div className="pdf_Cont">
-      <div className="darft_container ">
+      <div className="darft_container">
         <div className="boxDarft">
           <Link to="/" className="main_pageLink">
             <FiArrowLeft /> Asosiy
