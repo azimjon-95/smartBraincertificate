@@ -67,36 +67,32 @@ function Draft() {
           </div>
           <div className="pdf_main">
             <p>Fullname</p>
-            <b>
-              {data?.name}  {data?.surname}
+            <b className={data?.name ? "" : "skeleton"}>
+              {data?.name ? `${data.name} ${data.surname}` : ""}
             </b>
           </div>
           <div className="pdf_main">
-            <p>Catigory</p>
-            <b>
-              {data?.courseName}
+            <p>Category</p>
+            <b className={data?.courseName ? "" : "skeleton"}>
+              {data?.courseName || ""}
             </b>
           </div>
           <div className="pdf_main">
-            <p>ID </p>
-            <b>
-
-              {data?.id}
+            <p>ID</p>
+            <b className={data?.id ? "" : "skeleton"}>
+              {data?.id || ""}
             </b>
-
           </div>
           <div className="pdf_main">
             <p>Given date</p>
-            <b>
-
-              {data?.givenDate}
+            <b className={data?.givenDate ? "" : "skeleton"}>
+              {data?.givenDate || ""}
             </b>
           </div>
-
           <div className="pdf_main">
             <p>Teacher's name</p>
-            <b>
-              {data?.teachername}
+            <b className={data?.teachername ? "" : "skeleton"}>
+              {data?.teachername || ""}
             </b>
           </div>
 

@@ -49,6 +49,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 10px;
+    margin-top: 15px;
 }
 
 
@@ -137,7 +138,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between !important;
         padding: 5px 10px;
         border-bottom: 4px solid #35af3a;
         position: relative;
@@ -159,5 +160,28 @@
 
     .pdf-text>p {
         font-size: 13px;
+    }
+}
+
+
+.skeleton {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite;
+    height: 20px;
+    width: 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-color: #f0f0f0;
+    }
+
+    50% {
+        background-color: #e0e0e0;
+    }
+
+    100% {
+        background-color: #f0f0f0;
     }
 }
