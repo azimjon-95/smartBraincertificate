@@ -47,17 +47,12 @@
 .pdf_banner_img {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.pdf_banner_img>h1 {
-    font-size: 40px;
-    font-weight: 800;
-    text-align: center;
-    color: #35af3a;
-}
 
 .pdf_bannerImgBox {
-    height: 150px;
+    height: 160px;
     width: 190px;
     /* background-color: blueviolet; */
 }
@@ -86,7 +81,7 @@
 }
 
 .main_pageLink {
-    background-color: blue;
+    background-color: #35af3a;
     color: #fff;
     padding: 5px 10px;
     display: flex;
@@ -121,10 +116,11 @@
     }
 
     .pdf_banner_img>h1 {
-        font-size: 25px;
+        font-size: 27px;
         font-weight: 800;
         text-align: center;
         color: #35af3a;
+        font-family: sans-serif;
     }
 
 
