@@ -4,35 +4,23 @@ import axios from "../../api/api";
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import Logo from '../../components/certificates/reactJs/SBLogo.png'
-
 import './Draft.css';
-import { AuthContext } from "../../context/AuthContext";
 
 
 function Draft() {
-  const { setIsLoading } = useContext(AuthContext)
-
   const params = useParams();
   const [data, setData] = useState('');
-  console.log("data: ", data)
   useEffect(() => {
 
     const getApi = async () => {
-      setIsLoading(true)
       await axios
         .post(`certificate/check/${(params?.id)?.toUpperCase()}`)
         .then((certificateDrafted) => {
           // console.log(certificateDrafted)
           setData(certificateDrafted?.data)
 
-          setTimeout(() => {
-            setIsLoading(false)
-
-          }, 1000);
-
         })
         .catch(err => {
-          setIsLoading(false)
           console.log(err)
         })
     }
