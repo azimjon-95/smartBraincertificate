@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "../../api/api";
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
-import Logo from './IMGBaner.png'
+import Logo from '../../components/certificates/reactJs/SBLogo.png'
 
 import './Draft.css';
 import { AuthContext } from "../../context/AuthContext";
@@ -56,13 +56,13 @@ function Draft() {
               <div className="pdf_bannerImgBox">
                 <img src={Logo} alt="" />
               </div>
-              <h1>Algorithm <br /> Education center</h1>
+              <h1>SmartBrain <br /> IT Kompaniy</h1>
             </div>
 
 
             <div className="by">
               <i>The following details are confirmed by:</i> <br />
-              <i><b>Algoritm21.uz</b></i>
+              <i><b>Smartbrain.uz</b></i>
             </div>
           </div>
           <div className="pdf_main">
