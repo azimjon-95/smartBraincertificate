@@ -83,6 +83,10 @@
     font-family: sans-serif;
 }
 
+.by b {
+    color: #35af3a !important;
+}
+
 .main_pageLink {
     background-color: #35af3a;
     color: #fff;
@@ -133,7 +137,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 5px 10px;
         border-bottom: 4px solid #35af3a;
         position: relative;
