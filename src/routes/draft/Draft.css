@@ -173,7 +173,7 @@
     border-radius: 4px;
     animation: shimmer 1.5s infinite;
     height: 40px;
-    width: 80%;
+    width: 50%;
 }
 
 @keyframes shimmer {
