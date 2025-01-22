@@ -101,7 +101,7 @@ function Draft() {
           </div>
 
           <div className="pdf_main pdf-text">
-            <p>© Algoritm Education, 2023 All rights reserved.</p>
+            <p>© SmartBrain IT Kompaniy, 2025 All rights reserved.</p>
           </div>
 
         </div>
